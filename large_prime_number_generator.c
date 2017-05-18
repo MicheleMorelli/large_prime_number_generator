@@ -1,9 +1,11 @@
 #include <stdio.h>
 
-#define LIM 4099999 // the upper limit
-#define SIZE (((LIM)/2)-1) 
+#define LIM 99999999 // the upper limit
+#define SIZE (((LIM)/2))
+
+unsigned long long int nums[SIZE], n;
+
 void main(){
-    unsigned int nums[SIZE], n;
     //assign odd numbers to array
     for(unsigned int i = 0, n=3;n<LIM;n+=2,i++){nums[i] = n;} 
 
